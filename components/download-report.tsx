@@ -55,7 +55,7 @@ export function DownloadReportButton({ assessment, className }: ReportProps) {
             doc.setTextColor(255, 255, 255);
             doc.setFontSize(15);
             doc.setFont('helvetica', 'bold');
-            doc.text('Prasad Physiotherapy Clinic', pageWidth / 2, 16, { align: 'center' });
+            doc.text('Muscularbox Physiotherapy', pageWidth / 2, 16, { align: 'center' });
             doc.setFontSize(9);
             doc.setFont('helvetica', 'normal');
             doc.text(`Patient ID: #${String(assessment.id || 'NEW').padStart(4, '0')}`, pageWidth / 2, 23, { align: 'center' });

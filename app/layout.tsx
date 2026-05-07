@@ -7,12 +7,12 @@ import { Button } from "@/components/ui/button";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Physio Assessment",
-  description: "Physiotherapy Assessment Software",
+  title: "Muscularbox Physio",
+  description: "Muscularbox Physiotherapy Assessment Software",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "PhysioTrack",
+    title: "Muscularbox Physio",
   },
 };
 
@@ -39,12 +39,12 @@ export default function RootLayout({
               <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-primary flex-shrink-0 bg-[#5a4a3a]">
                 <img
                   src="/logo.jpg"
-                  alt="Prasad Physio Therapy"
+                  alt="Muscularbox Physiotherapy"
                   className="w-full h-full object-cover scale-125"
                 />
               </div>
               <span className="text-lg sm:text-2xl font-bold text-primary">
-                PhysioTrack
+                Muscularbox Physio
               </span>
             </Link>
             <nav className="flex items-center gap-1.5 sm:gap-3">
