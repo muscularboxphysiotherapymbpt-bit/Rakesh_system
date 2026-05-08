@@ -27,13 +27,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         const unsubscribe = onAuthStateChanged(auth, async (user) => {
             setUser(user);
             if (user) {
-                // In a production app, we would fetch the role from our Staff table via API
-                // or use Firebase Custom Claims. For now, we'll use a mock fetch.
                 try {
-                    const response = await fetch(`/api/staff/role?email=${user.email}`);
+                    const APPS_SCRIPT_URL = process.env.NEXT_PUBLIC_GOOGLE_APPS_SCRIPT_URL;
+                    const response = await fetch(`${APPS_SCRIPT_URL}?action=getUserRole&email=${user.email}`);
                     const data = await response.json();
-                    setRole(data.role || "Staff"); // Default to Staff if not found
+                    setRole(data.role as Role || "Staff");
                 } catch (e) {
+                    console.error("Role fetch failed:", e);
                     setRole("Staff");
                 }
             } else {

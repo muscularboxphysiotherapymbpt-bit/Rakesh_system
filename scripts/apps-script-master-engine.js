@@ -1,5 +1,5 @@
 /**
- * MUSCULARBOX ERP MASTER ENGINE v1.0
+ * MUSCULARBOX ERP MASTER ENGINE v1.1
  * 
  * Features:
  * - Automated 15-Table Relational Schema
@@ -11,7 +11,7 @@
 
 const CONFIG = {
     PROJECT_NAME: "Muscularbox ERP",
-    VERSION: "1.0",
+    VERSION: "1.1",
     DRIVE_FOLDER_NAME: "Muscularbox_Clinical_Records"
 };
 
@@ -107,6 +107,11 @@ function doGet(e) {
                 return jsonResponse(getDashboardStats(role));
             case "getPatients":
                 return jsonResponse(getData("patients"));
+            case "getStaff":
+                if (role !== "Admin") throw new Error("Unauthorized Access to Staff List");
+                return jsonResponse(getData("staff"));
+            case "getUserRole":
+                return jsonResponse(getUserRole(e.parameter.email));
             case "getFinancials":
                 if (role !== "Admin" && role !== "Accountant") throw new Error("Unauthorized Access to Financials");
                 return jsonResponse(getFinancialStats());
@@ -131,6 +136,9 @@ function doPost(e) {
             case "registerPatient":
                 result = registerPatient(data.patient);
                 break;
+            case "registerStaff":
+                result = registerStaff(data.staffData);
+                break;
             case "saveAssessment":
                 result = saveAssessmentWithMedia(data.assessment);
                 break;
@@ -149,6 +157,16 @@ function doPost(e) {
     } catch (err) {
         return jsonResponse({ success: false, error: err.toString() });
     }
+}
+
+// --- STAFF MANAGEMENT ---
+
+function registerStaff(s) {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const sheet = ss.getSheetByName("staff");
+    const id = "STF-" + new Date().getTime();
+    sheet.appendRow([id, s.name, s.email, s.role, s.specialization || "General", new Date(), "Active"]);
+    return { id: id };
 }
 
 // --- ADVANCED ASSESSMENT MEDIA LOGIC ---
@@ -284,4 +302,24 @@ function getData(sheetName) {
 function jsonResponse(obj) {
     return ContentService.createTextOutput(JSON.stringify(obj))
         .setMimeType(ContentService.MimeType.JSON);
+}
+
+function getUserRole(email) {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const sheet = ss.getSheetByName("staff");
+    if (!sheet) return { role: "Staff" };
+    const data = sheet.getDataRange().getValues();
+    
+    // Check primary admin first
+    if (email === "muscularboxphysiotherapymbpt@gmail.com" || email === "rakesh@muscularbox.com") {
+        return { role: "Admin" };
+    }
+    
+    for (let i = 1; i < data.length; i++) {
+        if (data[i][2] === email) {
+            return { role: data[i][3] };
+        }
+    }
+    
+    return { role: "Staff" }; // Default role
 }
