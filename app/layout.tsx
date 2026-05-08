@@ -1,29 +1,15 @@
-import type { Metadata, Viewport } from "next";
+"use client";
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { AuthProvider } from "@/context/auth-context";
-import { Sidebar } from "@/components/sidebar";
-
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Muscularbox ERP",
-  description: "Advanced Physiotherapy Clinic ERP & Financial Intelligence Platform",
-};
-
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 5,
-  userScalable: true,
-  themeColor: "#ffffff",
-};
-
-import { AuthProvider } from "@/context/auth-context";
+import { AuthProvider, useAuth } from "@/context/auth-context";
 import { Sidebar } from "@/components/sidebar";
 import { AuthGuard } from "@/components/auth-guard";
+import { usePathname } from "next/navigation";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -32,29 +18,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <AuthProvider>
-        <AuthGuard>
-        <body className={inter.className}>
-          <div className="flex min-h-screen bg-slate-50/50">
-            <SidebarContainer />
-            <div className="flex-1 flex flex-col">
-              <HeaderContainer />
-              <main className="flex-1 overflow-y-auto bg-slate-50/50">
-                <div className="container mx-auto py-4 sm:py-8 px-3 sm:px-6 max-w-7xl">
-                  {children}
-                </div>
-              </main>
+      <body className={inter.className}>
+        <AuthProvider>
+          <AuthGuard>
+            <div className="flex min-h-screen bg-slate-50/50">
+              <SidebarContainer />
+              <div className="flex-1 flex flex-col">
+                <HeaderContainer />
+                <main className="flex-1 overflow-y-auto bg-slate-50/50">
+                  <div className="container mx-auto py-4 sm:py-8 px-3 sm:px-6 max-w-7xl">
+                    {children}
+                  </div>
+                </main>
+              </div>
             </div>
-          </div>
-        </body>
-        </AuthGuard>
-      </AuthProvider>
+          </AuthGuard>
+        </AuthProvider>
+      </body>
     </html>
   );
 }
-
-import { usePathname } from "next/navigation";
-import { useAuth } from "@/context/auth-context";
 
 function SidebarContainer() {
     const pathname = usePathname();
