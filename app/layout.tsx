@@ -52,16 +52,17 @@ function HeaderContainer() {
     if (pathname === "/login" || !user) return null;
     
     return (
-        <header className="border-b sticky top-0 bg-white/80 backdrop-blur-md z-50 shadow-sm">
-            <div className="container mx-auto flex h-14 sm:h-16 items-center justify-between px-3 sm:px-6">
-                <div className="flex items-center gap-2 sm:gap-3">
-                    <span className="text-lg sm:text-xl font-black text-primary tracking-tighter uppercase">
-                        Command Center
+        <header className="border-b sticky top-0 bg-white/80 backdrop-blur-2xl z-50 shadow-sm border-slate-100">
+            <div className="container mx-auto flex h-20 items-center justify-between px-6 sm:px-10">
+                <div className="flex items-center gap-4">
+                    <div className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                    <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.3em]">
+                        System Active: Cloud Mode
                     </span>
                 </div>
-                <nav className="flex items-center gap-1.5 sm:gap-3">
-                    <Button asChild size="sm" className="rounded-xl font-black text-[10px] sm:text-xs h-8 sm:h-9 px-4 sm:px-6 shadow-md bg-slate-900 hover:bg-black transition-all text-white">
-                        <Link href="/patients/new">NEW PATIENT</Link>
+                <nav className="flex items-center gap-4">
+                    <Button asChild size="sm" className="rounded-2xl font-black text-[10px] h-11 px-8 shadow-xl bg-slate-900 hover:bg-black transition-all text-white uppercase tracking-widest active:scale-95">
+                        <Link href="/patients/new">New Clinical Entry</Link>
                     </Button>
                 </nav>
             </div>
