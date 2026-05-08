@@ -77,10 +77,9 @@ export default function Dashboard() {
             </div>
 
             {/* High-Density Stats Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {[
                     { label: "Total Patients", value: stats?.totalPatients || 0, icon: Users, color: "bg-blue-500", trend: "+12% this month" },
-                    { label: "Clinical Sessions", value: stats?.todayAppointments || 0, icon: Calendar, color: "bg-purple-500", trend: "8 Pending Today" },
                     { label: "Package Assets", value: stats?.activePackages || 0, icon: Package, color: "bg-amber-500", trend: "₹1.2L Unrealized" },
                     { label: "Revenue Flux", value: stats?.revenue ? `₹${stats.revenue}` : "---", icon: TrendingUp, color: "bg-emerald-500", trend: "Real-time Feed" },
                 ].map((stat, i) => (

@@ -26,7 +26,6 @@ export function Sidebar() {
     const links = [
         { href: "/", label: "Dashboard", icon: LayoutDashboard, roles: ["Admin", "Staff", "Therapist"] },
         { href: "/patients", label: "Patients", icon: Users, roles: ["Admin", "Staff", "Therapist"] },
-        { href: "/appointments", label: "Calendar", icon: Calendar, roles: ["Admin", "Staff"] },
         { href: "/financials", label: "Financial Intel", icon: BarChart3, roles: ["Admin", "Accountant"] },
         { href: "/packages", label: "Packages", icon: Package, roles: ["Admin"] },
         { href: "/attendance", label: "Attendance", icon: Activity, roles: ["Admin", "Staff"] },
