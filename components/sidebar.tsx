@@ -40,7 +40,7 @@ export function Sidebar() {
             {/* Logo Section */}
             <div className="p-8 pb-10">
                 <div className="flex flex-col items-start gap-4">
-                    <img src="/logo.png" alt="Muscularbox Logo" className="h-16 w-auto object-contain" />
+                    <img src="/logo.jpg" alt="Muscularbox Logo" className="h-16 w-auto object-contain" />
                     <div>
                         <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.3em] leading-tight">Command Center v1.1</span>
                     </div>
