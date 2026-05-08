@@ -10,8 +10,8 @@ export const metadata = {
   title: "Muscularbox ERP | Command Center",
   description: "Enterprise Physiotherapy Management System",
   icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
+    icon: "/download.jpg",
+    apple: "/download.jpg",
   },
 };
 

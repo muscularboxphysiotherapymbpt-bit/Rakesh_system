@@ -21,7 +21,7 @@ export function LayoutShell({ children }: { children: React.ReactNode }) {
                     <header className="sticky top-0 bg-white/70 backdrop-blur-3xl z-40 border-b border-slate-100">
                         <div className="container mx-auto flex h-24 items-center justify-between px-10">
                             <div className="flex items-center gap-5">
-                                <img src="/logo.png" alt="MB" className="h-12 w-auto object-contain" />
+                                <img src="/download.jpg" alt="MB" className="h-12 w-auto object-contain" />
                                 <div>
                                     <div className="flex items-center gap-2">
                                         <div className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
