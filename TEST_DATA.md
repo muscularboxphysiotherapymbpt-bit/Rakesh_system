@@ -1,8 +1,8 @@
 # 🧪 Test Data - Dummy Patient Records
 
-## Complete Test Cases for PhysioTrack
+## Complete Test Cases for Muscularbox Physio
 
-Use these realistic dummy patient records to test all features of your PhysioTrack application.
+Use these realistic dummy patient records to test all features of your Muscularbox Physio application.
 
 ---
 
@@ -62,7 +62,7 @@ Use these realistic dummy patient records to test all features of your PhysioTra
 
 ### Additional:
 - **Comments**: Patient very anxious about returning to work. Recommend gradual mobilization, core strengthening, ergonomic assessment of workstation. Follow-up in 3 days.
-- **Submitted By**: Dr. Prasad
+- **Submitted By**: Dr. Muscularbox
 
 ---
 
@@ -122,7 +122,7 @@ Use these realistic dummy patient records to test all features of your PhysioTra
 
 ### Additional:
 - **Comments**: Patient showing good progress with mobilization and stretching exercises. Continue current treatment plan. Educate on home exercise program. Review in 1 week.
-- **Submitted By**: Dr. Prasad
+- **Submitted By**: Dr. Muscularbox
 
 ---
 
@@ -182,7 +182,7 @@ Use these realistic dummy patient records to test all features of your PhysioTra
 
 ### Additional:
 - **Comments**: Discussed weight management, quadriceps strengthening, pain management strategies. Consider referral to orthopedic surgeon if conservative management fails. Recommend hydrotherapy, walking aids assessment. Follow-up in 2 weeks.
-- **Submitted By**: Dr. Prasad
+- **Submitted By**: Dr. Muscularbox
 
 ---
 
@@ -242,7 +242,7 @@ Use these realistic dummy patient records to test all features of your PhysioTra
 
 ### Additional:
 - **Comments**: Grade 2 lateral ankle sprain. Continue RICE protocol. Non-weight bearing for 48 hours, then progressive weight bearing as tolerated. Start gentle ROM exercises after 48 hours. Proprioception training essential before return to dance. Estimated recovery 4-6 weeks. Review in 3 days.
-- **Submitted By**: Dr. Prasad
+- **Submitted By**: Dr. Muscularbox
 
 ---
 
@@ -302,7 +302,7 @@ Use these realistic dummy patient records to test all features of your PhysioTra
 
 ### Additional:
 - **Comments**: Classic lateral epicondylitis (tennis elbow). Recommend eccentric strengthening exercises, technique modification, equipment check (racket grip size). Consider corticosteroid injection if no improvement in 4 weeks. Gradual return to tennis with modified training. Review in 2 weeks.
-- **Submitted By**: Dr. Prasad
+- **Submitted By**: Dr. Muscularbox
 
 ---
 
@@ -347,4 +347,4 @@ Comments: Test entry for system verification
 
 ---
 
-**Use these realistic test cases to thoroughly test all features of your PhysioTrack application!** 🧪✅
+**Use these realistic test cases to thoroughly test all features of your Muscularbox Physio application!** 🧪✅

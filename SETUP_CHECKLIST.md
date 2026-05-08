@@ -1,4 +1,4 @@
-# ✅ PhysioTrack Setup Checklist
+# ✅ Muscularbox Physio Setup Checklist
 
 Use this checklist to ensure you've completed all setup steps correctly.
 
@@ -11,7 +11,7 @@ Use this checklist to ensure you've completed all setup steps correctly.
 ## 🗂️ Step 1: Google Sheet Setup
 
 - [ ] Created new Google Sheet
-- [ ] Named it "PhysioTrack Assessments"
+- [ ] Named it "Muscularbox Physio Assessments"
 - [ ] Copied column headers from `COLUMN_HEADERS.md`
 - [ ] Pasted headers into Row 1 (A1 to AL1)
 - [ ] Verified all 38 columns are present
@@ -23,7 +23,7 @@ Use this checklist to ensure you've completed all setup steps correctly.
 - [ ] Copied code from `scripts/google-apps-script.js`
 - [ ] Pasted into Apps Script editor
 - [ ] Saved the script (Ctrl+S)
-- [ ] Named project "PhysioTrack API"
+- [ ] Named project "Muscularbox Physio API"
 
 ## 🚀 Step 3: Deploy Apps Script
 
@@ -36,7 +36,7 @@ Use this checklist to ensure you've completed all setup steps correctly.
   - [ ] Clicked "Authorize access"
   - [ ] Chose Google account
   - [ ] Clicked "Advanced"
-  - [ ] Clicked "Go to PhysioTrack API (unsafe)"
+  - [ ] Clicked "Go to Muscularbox Physio API (unsafe)"
   - [ ] Clicked "Allow"
 - [ ] Copied Web App URL
 - [ ] Saved URL somewhere safe
@@ -104,7 +104,7 @@ Use this checklist to ensure you've completed all setup steps correctly.
 
 ## 🎉 Success Criteria
 
-You've successfully set up PhysioTrack when:
+You've successfully set up Muscularbox Physio when:
 - ✅ Form loads without errors
 - ✅ Can submit a test assessment
 - ✅ Data appears in Google Sheet

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /**
- * Prasad Physiotherapy Clinic - Backend Sync Engine (v2.5 - Final)
+ * Muscularbox Physiotherapy - Backend Sync Engine (v2.5 - Final)
  * Solves: Date Mismatch, Duplicates on Edit, and Phantom Columns.
  * Updated: Problem List, Specific advice, Removed Clinical Summary.
  */

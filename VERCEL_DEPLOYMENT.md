@@ -1,9 +1,9 @@
-# 🚀 Deploy PhysioTrack to Vercel
+# 🚀 Deploy Muscularbox Physio to Vercel
 
 ## ✅ GitHub Repository Created!
 
 Your code has been successfully pushed to:
-**https://github.com/Rakesh-ai-ds/Prasad_physio_database**
+**https://github.com/Rakesh-ai-ds/Muscularbox_physio_database**
 
 ---
 
@@ -22,7 +22,7 @@ Your code has been successfully pushed to:
 ### Step 2: Import Your Project
 
 1. Click **"Add New..."** → **"Project"**
-2. Find **"Prasad_physio_database"** in the list
+2. Find **"Muscularbox_physio_database"** in the list
 3. Click **"Import"**
 
 ---
@@ -76,7 +76,7 @@ https://script.google.com/macros/s/AKfycbzRZF1xu1RX8dXbqSg6nH7zfMrOF7oJcI6578TtI
 
 After deployment, you'll get a URL like:
 ```
-https://prasad-physio-database.vercel.app
+https://Muscularbox-physio-database.vercel.app
 ```
 
 Or a custom domain if you set one up!
@@ -154,7 +154,7 @@ Vercel will automatically deploy the changes!
 
 ## 🎨 Custom Domain (Optional)
 
-Want to use your own domain like `physiotrack.prasadclinic.com`?
+Want to use your own domain like `Muscularbox Physio.Muscularboxclinic.com`?
 
 1. Go to Vercel Dashboard
 2. Click your project
@@ -213,7 +213,7 @@ If you encounter issues:
 
 ---
 
-**Your PhysioTrack is ready for the world!** 🚀🌍
+**Your Muscularbox Physio is ready for the world!** 🚀🌍
 
 Deploy URL: https://vercel.com/new
-GitHub Repo: https://github.com/Rakesh-ai-ds/Prasad_physio_database
+GitHub Repo: https://github.com/Rakesh-ai-ds/Muscularbox_physio_database

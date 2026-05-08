@@ -1,4 +1,4 @@
-# 🎉 PhysioTrack - Edit Feature Added!
+# 🎉 Muscularbox Physio - Edit Feature Added!
 
 ## ✅ What I Just Added:
 
@@ -64,7 +64,7 @@
 
 ## 🎯 Complete Feature Set:
 
-Your PhysioTrack now has:
+Your Muscularbox Physio now has:
 
 1. ✅ **Create** - Add new assessments (`/new`)
 2. ✅ **Read** - View all assessments (Dashboard)
@@ -96,4 +96,4 @@ Your PhysioTrack now has:
 
 ---
 
-**Your PhysioTrack system is now complete with full CRUD functionality!** 🎉
+**Your Muscularbox Physio system is now complete with full CRUD functionality!** 🎉

@@ -1,5 +1,5 @@
 /**
- * Prasad Physiotherapy Clinic - Backend Sync Engine (v2.3 - Final)
+ * Muscularbox Physiotherapy - Backend Sync Engine (v2.3 - Final)
  * Solves: Date Mismatch, Duplicates on Edit, and Phantom Columns.
  */
 

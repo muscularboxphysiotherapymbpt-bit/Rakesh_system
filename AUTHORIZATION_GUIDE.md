@@ -23,7 +23,7 @@ This warning is **100% NORMAL** and **SAFE** to proceed with. Here's why:
 Follow these exact steps:
 
 1. **Click "Advanced"** (bottom left of the warning)
-2. **Click "Go to PhysioTrack API (unsafe)"**
+2. **Click "Go to Muscularbox Physio API (unsafe)"**
    - It says "unsafe" but it's YOUR script - it's safe!
 3. **Review the permissions:**
    - "See, edit, create, and delete all your Google Sheets spreadsheets"
@@ -79,17 +79,17 @@ If you want extra security:
 │                                      │
 │  [Advanced] ← CLICK HERE             │
 │                                      │
-│  ▼ Go to PhysioTrack API (unsafe)   │
+│  ▼ Go to Muscularbox Physio API (unsafe)   │
 └─────────────────────────────────────┘
 ```
 
-**Step 3: Click "Go to PhysioTrack API (unsafe)"**
+**Step 3: Click "Go to Muscularbox Physio API (unsafe)"**
 ```
 ┌─────────────────────────────────────┐
-│  PhysioTrack API wants to access    │
+│  Muscularbox Physio API wants to access    │
 │  your Google Account                 │
 │                                      │
-│  This will allow PhysioTrack API to: │
+│  This will allow Muscularbox Physio API to: │
 │  • See, edit, create, and delete    │
 │    all your Google Sheets            │
 │                                      │
@@ -107,7 +107,7 @@ If you want extra security:
 - ✅ It's safe to proceed
 - ✅ You're authorizing YOUR OWN script
 - ✅ It only accesses YOUR Google Sheet
-- ✅ Click "Advanced" → "Go to PhysioTrack API (unsafe)" → "Allow"
+- ✅ Click "Advanced" → "Go to Muscularbox Physio API (unsafe)" → "Allow"
 
 ---
 

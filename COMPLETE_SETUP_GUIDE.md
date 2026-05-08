@@ -1,7 +1,7 @@
-# 📘 Complete Setup Guide for PhysioTrack with Google Sheets Apps Script
+# 📘 Complete Setup Guide for Muscularbox Physio with Google Sheets Apps Script
 
 ## 🎯 Overview
-This guide will help you connect your PhysioTrack application to Google Sheets using Apps Script. This is simpler than using the Google Sheets API and doesn't require service account credentials.
+This guide will help you connect your Muscularbox Physio application to Google Sheets using Apps Script. This is simpler than using the Google Sheets API and doesn't require service account credentials.
 
 ---
 
@@ -9,7 +9,7 @@ This guide will help you connect your PhysioTrack application to Google Sheets u
 
 1. Go to [Google Sheets](https://sheets.google.com)
 2. Click **"+ Blank"** to create a new spreadsheet
-3. Name it: **"PhysioTrack Assessments"**
+3. Name it: **"Muscularbox Physio Assessments"**
 
 ---
 
@@ -36,7 +36,7 @@ Date | PatientName | Age | Occupation | MechanismOfInjury | ... (38 columns tota
 5. **Copy ALL the code** from that file
 6. **Paste it** into the Apps Script editor
 7. Click the **Save** icon (💾) or press `Ctrl+S`
-8. Name your project: **"PhysioTrack API"**
+8. Name your project: **"Muscularbox Physio API"**
 
 ---
 
@@ -46,7 +46,7 @@ Date | PatientName | Age | Occupation | MechanismOfInjury | ... (38 columns tota
 2. Click the **gear icon** (⚙️) next to "Select type"
 3. Choose **"Web app"**
 4. Configure the deployment:
-   - **Description**: `PhysioTrack API v1`
+   - **Description**: `Muscularbox Physio API v1`
    - **Execute as**: `Me (your email)`
    - **Who has access**: `Anyone`
 5. Click **Deploy**
@@ -58,7 +58,7 @@ Date | PatientName | Age | Occupation | MechanismOfInjury | ... (38 columns tota
      - This happens because YOU created the script, and Google hasn't "verified" it
      - **It's safe to proceed** - you're authorizing your own script
    - Click **Advanced** (at the bottom left)
-   - Click **Go to PhysioTrack API (unsafe)** (it's not actually unsafe - it's YOUR script!)
+   - Click **Go to Muscularbox Physio API (unsafe)** (it's not actually unsafe - it's YOUR script!)
    - Review the permissions:
      - "See, edit, create, and delete all your Google Sheets spreadsheets"
      - This is needed so the script can write to your sheet
@@ -102,7 +102,7 @@ Date | PatientName | Age | Occupation | MechanismOfInjury | ... (38 columns tota
 ### Problem: "Google hasn't verified this app" warning
 - **This is NORMAL!** ✅
 - This warning appears because YOU created the script, not a verified company
-- **It's completely safe** to click "Advanced" → "Go to PhysioTrack API (unsafe)"
+- **It's completely safe** to click "Advanced" → "Go to Muscularbox Physio API (unsafe)"
 - You're only authorizing your own script to access your own Google Sheet
 - Google shows this warning for ALL personal Apps Scripts
 
@@ -221,7 +221,7 @@ Date | PatientName | Age | Occupation | MechanismOfInjury | ... (38 columns tota
 
 ## 🎉 You're Done!
 
-Your PhysioTrack application is now connected to Google Sheets!
+Your Muscularbox Physio application is now connected to Google Sheets!
 
 **Next Steps:**
 - Test with real patient data
@@ -241,4 +241,4 @@ If you encounter issues:
 
 ---
 
-**Created for PhysioTrack** | Last updated: December 2025
+**Created for Muscularbox Physio** | Last updated: December 2025

@@ -1,8 +1,8 @@
 # 🔄 Data Synchronization Guide
 
-## How PhysioTrack Syncs with Google Sheets
+## How Muscularbox Physio Syncs with Google Sheets
 
-Your PhysioTrack application is configured to **always show the latest data** from your Google Sheet, even if you manually edit the sheet.
+Your Muscularbox Physio application is configured to **always show the latest data** from your Google Sheet, even if you manually edit the sheet.
 
 ### ✅ What's Configured:
 

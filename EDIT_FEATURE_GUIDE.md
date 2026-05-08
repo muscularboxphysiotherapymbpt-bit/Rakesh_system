@@ -20,7 +20,7 @@ You can now edit assessments if you made a mistake or need to update patient inf
 ### Step-by-Step Instructions:
 
 1. **Open Your Google Sheet**
-   - Go to your PhysioTrack Google Sheet
+   - Go to your Muscularbox Physio Google Sheet
 
 2. **Open Apps Script**
    - Click **Extensions** → **Apps Script**
@@ -257,7 +257,7 @@ When you edit an assessment, the following happens:
 
 ## ✅ Feature Summary:
 
-Your PhysioTrack system now supports:
+Your Muscularbox Physio system now supports:
 
 1. ✅ **Create** new assessments
 2. ✅ **View** assessment details

@@ -1,10 +1,10 @@
-# PhysioTrack - Google Sheets Setup Guide
+# Muscularbox Physio - Google Sheets Setup Guide
 
 ## Step 1: Create Google Sheet
 
 1. Go to https://sheets.google.com
 2. Create a new blank spreadsheet
-3. Name it: "PhysioTrack Assessments"
+3. Name it: "Muscularbox Physio Assessments"
 
 ## Step 2: Add Column Headers
 
@@ -99,7 +99,7 @@ function doGet(e) {
 2. Click the gear icon ⚙️ next to "Select type"
 3. Choose **Web app**
 4. Configure:
-   - **Description**: PhysioTrack API
+   - **Description**: Muscularbox Physio API
    - **Execute as**: Me (your email)
    - **Who has access**: Anyone
 5. Click **Deploy**
