@@ -27,9 +27,7 @@ export default function Dashboard() {
     if (loading) {
         return (
             <div className="h-[70vh] flex flex-col items-center justify-center gap-8 animate-pulse">
-                <div className="h-20 w-20 rounded-[2.5rem] bg-slate-900 flex items-center justify-center shadow-2xl">
-                    <Zap className="h-10 w-10 text-primary" />
-                </div>
+                <img src="/logo.png" alt="Loading..." className="h-20 w-auto opacity-20" />
                 <p className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-300">Neural Sync In Progress</p>
             </div>
         );

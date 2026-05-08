@@ -39,13 +39,10 @@ export function Sidebar() {
         <aside className="w-72 bg-white border-r border-slate-100 min-h-screen flex flex-col shadow-2xl shadow-slate-200/50 sticky top-0 h-screen overflow-y-auto">
             {/* Logo Section */}
             <div className="p-8 pb-10">
-                <div className="flex items-center gap-3">
-                    <div className="h-10 w-10 rounded-2xl bg-slate-900 flex items-center justify-center shadow-lg shadow-slate-900/20">
-                        <Zap className="h-6 w-6 text-primary" />
-                    </div>
+                <div className="flex flex-col items-start gap-4">
+                    <img src="/logo.png" alt="Muscularbox Logo" className="h-16 w-auto object-contain" />
                     <div>
-                        <h2 className="font-black text-lg tracking-tighter text-slate-900 leading-none">MUSCULARBOX</h2>
-                        <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] leading-tight">Command Center</span>
+                        <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.3em] leading-tight">Command Center v1.1</span>
                     </div>
                 </div>
             </div>
